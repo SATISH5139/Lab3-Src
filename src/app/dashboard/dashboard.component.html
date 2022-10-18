@@ -1,0 +1,10 @@
+<p>dashboard works!</p>
+<button (click)="ShowProduct()">products</button><hr/>
+<h5>{{products | json}}</h5>
+<ul>
+    <li *ngFor="let comment of products">
+        <div style="background-color: blue; color:whitesmoke">{{comment.Id}}</div>
+        <div>{{comment.body}}</div>
+        <hr/>
+    </li>
+</ul>
